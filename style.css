@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* global btn style */
+.started {
+    background: hsl(12, 88%, 59%);
+    border: none;
+    color: white;
+    padding: 1.2rem 3rem;
+    display: inline-block;
+    border-radius: 2rem;
+    box-shadow: hsl(12, 88%, 90%) 0px 8px 24px;
+}
+
+button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+nav {
+    padding: 5rem 5% 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+nav .options a {
+    font-size: 1.8rem;
+    color: hsl(233, 12%, 13%);
+    margin-left: 5rem;
+}
+
+nav .options a:hover {
+    color: hsl(0, 0%, 70%);
+}
+
+nav .overlay .fa-times {
+    display: none;
+}
+
+nav .fa-bars {
+    font-size: 2rem;
+    display: none;
+}
+
+nav .overlay .fa-close {
+    display: none;
+}
+
+
+
+section {
+    padding: 10rem 5% 10rem;
+}
+
+
+/* ---hero-section-- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero .left h1 {
+    font-size: 4rem;
+    color: hsl(233, 12%, 13%);
+}
+
+.hero .left p {
+    font-size: 1.8rem;
+    color: hsl(233, 12%, 50%);
+    width: 45%;
+    margin-block: 3.5rem;
+}
+
+.hero .right {
+    position: relative;
+}
+
+.hero .right::after {
+    position: absolute;
+    content: '';
+    height: 80rem;
+    width: 38rem;
+    background: hsl(12, 88%, 59%);
+    top: -110%;
+    right: -30%;
+    transform: rotate(45deg);
+    opacity: .1;
+    z-index: -1;
+    border-radius: 18rem;
+}
+
+.hero .right img {
+    width: 450px;
+    height: 380px;
+}
+
+
+
+
+/* ---advert--- */
+.advert {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.advert::after {
+    position: absolute;
+    content: '';
+    height: 65rem;
+    width: 38rem;
+    background: hsl(12, 88%, 59%);
+    top: 50%;
+    left: -5%;
+    transform: rotate(45deg);
+    opacity: .1;
+    z-index: -1;
+    border-radius: 18rem;
+}
+
+
+.advert .left h2 {
+    font-size: 3rem;
+    color: hsl(233, 12%, 13%);
+}
+
+.advert .left p {
+    font-size: 1.8rem;
+    color: hsl(233, 12%, 50%);
+    width: 50%;
+    margin-block: 3.5rem;
+    line-height: 1.5;
+}
+
+.advert .right {
+    /* align-self: flex-end; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: auto;
+    /* width: 30%; */
+}
+
+.advert .right .points {
+    width: 60%;
+    margin-left: auto;
+}
+
+
+.advert .right .points .p-top {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.advert .right .points .p-top .label {
+    width: 7rem;
+    height: 3.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    border-radius: 2rem;
+    background: hsl(12, 88%, 59%);
+    color: white;
+    font-size: 1.9rem;
+}
+
+.advert .right .points .p-top .sub-heading {
+    font-size: 1.9rem;
+    color: hsl(233, 12%, 13%);
+}
+
+.advert .right .points .text {
+    padding-top: 1.5rem;
+    padding-left: 9rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: hsl(233, 12%, 50%);
+    /* width: 50%; */
+}
+
+
+
+
+/* ---testimonials---- */
+.flickity-viewport {
+    overflow: visible;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    display: none;
+    background: none;
+}
+
+.flickity-prev-next-button {
+    display: none;
+    background: none;
+}
+
+section.testimonials {
+    margin-inline: 0;
+}
+
+.testimonials .display {
+    margin-top: 10rem;
+}
+
+.testimonials .cell {
+    width: 33%;
+    height: 20rem;
+    margin-inline: 1rem;
+    text-align: center;
+    background: hsl(0, 0%, 98%);
+    padding: 1rem 4rem 3rem;
+    margin-block: 1rem;
+}
+
+.testimonials .cell img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: -40px;
+    z-index: 100;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    color: hsl(233, 12%, 13%);
+    text-align: center;
+}
+
+.testimonials .individual {
+    text-align: center;
+}
+
+.testimonials .individual .sub-heading {
+    font-size: 1.9rem;
+    color: hsl(233, 12%, 13%);
+    padding-block: 2rem;
+}
+
+.testimonials .individual .text {
+    font-size: 1.8rem;
+    color: hsl(233, 12%, 50%);
+    line-height: 1.5;
+    margin-inline: auto;
+}
+
+.testimonials .btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+
+
+
+
+/* ---simplify section--- */
+
+.simplify {
+    background: hsl(12, 88%, 59%) url(images/bg-simplify-section-desktop.svg) no-repeat;
+    background-position: center right;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.simplify h2 {
+    font-size: 3rem;
+    color: White;
+    text-align: center;
+    /* margin-right: auto; */
+}
+
+.simplify .started {
+    background: white;
+    color: hsl(12, 88%, 59%);
+    box-shadow: unset;
+}
+
+
+
+
+
+
+/* ----footer--- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: hsl(233, 12%, 13%);
+    padding: 8rem 5% 8rem;
+    ;
+    color: white;
+    position: relative;
+}
+
+
+footer .first {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    flex: 1;
+}
+
+footer .first .logo {
+    width: 20rem;
+}
+
+footer .first .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer .first .icons img:hover {
+    fill: hsl(12, 88%, 59%);
+}
+
+footer .second {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    font-size: 1.8rem;
+    transition: none;
+}
+
+footer .second p:hover {
+    cursor: pointer;
+    color: hsl(12, 88%, 59%);
+}
+
+
+footer .second p {
+    margin-block: 1rem;
+    opacity: .8;
+}
+
+
+footer .third {
+    display: flex;
+    flex: 1;
+    align-self: flex-start;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+footer .third input {
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+}
+
+footer .third input.active {
+    border: .2rem solid red;
+}
+
+footer .third .label {
+    width: 7rem;
+    height: 3.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    border-radius: 2rem;
+    background: hsl(12, 88%, 59%);
+    color: white;
+    font-size: 1.9rem;
+}
+
+
+footer .copyright {
+    position: absolute;
+    bottom: 30%;
+    font-size: 1.6rem;
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --media query for 1500px and above--- */
+@media(min-width:1500px) {
+
+    nav,
+    section,
+    footer {
+        padding-inline: 16%;
+    }
+
+    .advert .right .points {
+        width: 50%;
+    }
+
+    section.testimonials {
+        margin-inline: 0;
+    }
+
+    footer .copyright {
+        right: 10%;
+    }
+}
+
+
+
+
+
+/* --media query for 1200px--- */
+@media(max-width:1200px) {
+    nav {
+        padding: 5rem 2% 5rem;
+    }
+
+    nav .options a {
+        margin-left: 3rem;
+    }
+
+    section,
+    footer {
+        padding: 10rem 2% 10rem;
+    }
+
+    footer .copyright {
+        right: 2%;
+    }
+
+    /* ---advert section-- */
+    .advert::after {
+        left: -15%;
+    }
+
+    section.testimonials {
+        margin-inline: 0;
+    }
+}
+
+
+
+
+
+
+/* --media query for 1000px--- */
+@media(max-width:1000px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ---nav-- */
+    nav {
+        padding: 5rem 4% 5rem;
+    }
+
+    section,
+    footer {
+        padding: 5rem 4%;
+    }
+
+    nav .started {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: initial;
+        cursor: pointer;
+    }
+
+    nav .fa-bars.off {
+        display: none;
+    }
+
+    nav .overlay {
+        background: rgba(0, 0, 0, 0.7);
+        min-height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        opacity: .8;
+        z-index: 1000;
+    }
+
+    nav .overlay.active {
+        top: 0;
+    }
+
+    nav .overlay .options {
+        position: absolute;
+        top: 15%;
+        left: 4%;
+        right: 4%;
+        background: white;
+        border-radius: .5rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 3rem;
+        z-index: 10;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    nav .overlay .options.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    nav .overlay .fa-close {
+        position: absolute;
+        right: 4%;
+        font-size: 3rem;
+        top: 5rem;
+        display: none;
+        cursor: pointer;
+
+    }
+
+    nav .overlay .fa-close.on {
+        display: initial;
+    }
+
+    nav .options a {
+        margin-left: 0;
+
+    }
+
+
+    /* ---carousel section--- */
+    .flickity-page-dots {
+        display: initial;
+    }
+
+
+    .testimonials .cell {
+        width: 85%;
+        margin-inline: auto;
+        margin-left: .5rem;
+
+    }
+
+
+    /* ---hero-section-- */
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero .left,
+    .hero .left p {
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .hero .left h1 {
+        text-align: center;
+    }
+
+
+    .hero .left p {
+        width: 60%;
+    }
+
+
+    .hero .right img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero .right::after {
+        height: 75rem;
+        top: -150%;
+        right: -60%;
+        width: 30rem;
+    }
+
+
+    /* ---advert-- */
+    .advert {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .advert::after {
+        /* display: none; */
+        height: 40rem;
+        width: 20rem;
+        top: -43%;
+        left: unset;
+        right: -17%;
+        transform: rotate(45deg);
+    }
+
+    .advert .left h2 {
+        margin-inline: auto;
+        width: 60%;
+    }
+
+    .advert .left p {
+        margin-inline: auto;
+        width: 70%;
+    }
+
+
+    .advert .right {
+        /* align-self: flex-end; */
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-left: unset;
+        margin-top: 3.5rem;
+        /* width: 30%; */
+    }
+
+    .advert .right .points {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .advert .right .points .p-top {
+        display: flex;
+        align-items: center;
+        gap: 0rem;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .advert .right .points .p-top .label {
+        width: 7rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        z-index: 10;
+    }
+
+    .advert .right .points .p-top .sub-heading {
+        font-size: 2rem;
+        background: hsl(12, 88%, 90%);
+        height: 3.5rem;
+        line-height: 3.5rem;
+        width: 100%;
+        text-align: left;
+        padding-left: 4rem;
+        margin-left: -20px;
+    }
+
+    .advert .right .points .text {
+        padding-left: 0rem;
+        font-size: 1.6rem;
+        width: 90%;
+        margin-inline: auto;
+        text-align: left;
+    }
+
+
+
+    /* --simplify section-- */
+    .simplify {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+
+
+    /* ---footer-- */
+
+
+
+    footer .copyright {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2%;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+
+    footer .first {
+        align-items: center;
+        gap: 5rem;
+        flex: unset;
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+
+    footer .first .icons {
+        gap: 6rem;
+    }
+
+    footer .second {
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        flex: unset;
+        font-size: 1.8rem;
+    }
+
+    footer .third {
+        flex: unset;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 1rem;
+    }
+
+    footer .third input {
+        width: 80%;
+    }
+
+    footer .third .label {
+        width: 20%;
+    }
+
+}
+
+
+
+@media(max-width:500px) {
+
+    .advert .right .points .p-top .sub-heading {
+        font-size: 1.7rem;
+        padding-left: 3rem;
+        margin-left: -20px;
+    }
+
+    .advert .right .points .p-top .label {
+        width: 4rem;
+        font-size: 1.5rem;
+    }
+}
